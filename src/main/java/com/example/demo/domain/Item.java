@@ -1,7 +1,12 @@
 package com.example.demo.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Item {
-    Long id;
-    String itemName;
-    Integer price;
+    private Long id;
+    private String itemName;
+    private Integer price;
 }
