@@ -5,6 +5,8 @@ import com.example.demo.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class ItemService {
@@ -16,5 +18,9 @@ public class ItemService {
 
     public Item findOne(Long id) {
         return itemRepository.findById(id);
+    }
+
+    public List<Item> findAllItems() {
+        return itemRepository.findAll();
     }
 }
